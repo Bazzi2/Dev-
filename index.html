@@ -22,7 +22,7 @@
                     <span>Entradas</span>
                     <img src="assets/income.svg" alt="Imagem de Entrada" />
                 </h3>
-                <p>R$ 5.000,00</p>
+                <p id="incomeDisplay">R$ 0,00</p>
             </div>
 
             <div class="cards">
@@ -30,7 +30,7 @@
                     <span>Saída</span>
                     <img src="/assets/expense.svg" alt="Imagem de Saída"/>
                 </h3>
-                <p> -R$ 2.000,00</p>
+                <p id="expenseDisplay"> -R$ 0,00</p>
             </div>
 
             <div class="cards total">
@@ -38,7 +38,7 @@
                     <span>Total</span>
                     <img src="/assets/total.svg" alt="Imagem de Total"/>
                 </h3>
-                <p>R$ 3.000,00</p>
+                <p id="totalDisplay" >R$ 0,00</p>
             </div>
 
         </section>
@@ -57,26 +57,7 @@
 
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td class="descriptions" >Salário</td>
-                        <td class="income"> R$ 5.000,00</td>
-                        <td class="date"> 10/05/2021</td>
-                        <td> <img class="removeButton"src="/assets/minus.svg" alt="Remover Transação"/> </td>
-                    </tr>
-                    <tr>
-                        <td class="descriptions" >Luz</td>
-                        <td class="expense"> -R$ 100,00</td>
-                        <td class="date"> 10/09/2021</td>
-                        <td> <img class="removeButton"src="/assets/minus.svg" alt="Remover Transação"/> </td>
-                    </tr>
-                    <tr>
-                        <td class="descriptions" >Internet</td>
-                        <td class="expense"> -R$ 300,00</td>
-                        <td class="date"> 10/09/2021</td>
-                        <td> <img class="removeButton" src="/assets/minus.svg" alt="Remover Transação"/> </td>
-                    </tr>
-                </tbody>
+                <tbody></tbody>
                 
             </table>
         </section>
@@ -90,7 +71,7 @@
         <div class="modal">
             <div id="form">
                 <h2>Nova Transação</h2>
-                <form action="" onsubmit="">
+                <form action="" onsubmit="Form.submit(event)">
                     <div class="input-group">
                         <label 
                             class="sr-only" 
