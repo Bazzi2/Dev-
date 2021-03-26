@@ -10,3 +10,11 @@ Is a app for finance control.
 
 ### Final notes
 Applying the concepts of CRUD and learn use arrays in JS, grid in CSS, and localStorage of web... 🐱‍💻
+
+
+
+## Tecnologies
+
+- HTML;
+- CSS
+- JS
